@@ -1,0 +1,10 @@
+Tennis	12.0	Albert
+Tennis	6.0	Alfred
+Tennis	4.0	Suzanne
+Tennis	18.0	Nicolas
+Tennis	14.0	Gabrielle
+Tennis	8.0	Nathalie
+Tennis	10.0	Lucile
+Tennis	12.0	Judith
+Tennis	13.0	Sarah
+Tennis	19.0	Lea
