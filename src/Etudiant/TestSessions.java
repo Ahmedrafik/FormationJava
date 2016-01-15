@@ -1,8 +1,10 @@
 package Etudiant;
 
+import java.io.IOException;
+
 public class TestSessions {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		Sessions annee = new Sessions();
 		
@@ -55,6 +57,13 @@ public class TestSessions {
 		annee.add("September", note5);		
 		
 		System.out.println(annee);
+		
+		Sessions sessions2016 = Sessions.getSessionsFromFiles();
+		System.out.println(sessions2016);
+		
+		String s = "gZmeAa";
+		String s1 = s.substring(0, 2);
+		System.out.println(s1);
 	}
 
 }

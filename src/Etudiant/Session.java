@@ -101,7 +101,6 @@ public class Session {
 			str = str + note;
 		}
 		return str;
-		
 	}
 
 }

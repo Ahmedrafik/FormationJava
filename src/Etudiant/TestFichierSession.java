@@ -35,6 +35,11 @@ public class TestFichierSession {
 		Note note10 = new Note(tennis, etu10, 19);
 		
 		Session maySession = new Session(5);
+		Session aprilSession = new Session(4);
+		Session augustSession = new Session(8);
+		Session februarySession = new Session(2);
+		Session marchSession = new Session(3);
+		Session januarySession = new Session(1);
 		
 		maySession.add(note1);
 		maySession.add(note2);
@@ -47,11 +52,38 @@ public class TestFichierSession {
 		maySession.add(note9);
 		maySession.add(note10);
 		
+		marchSession.add(note10);
+		marchSession.add(note5);
+		marchSession.add(note7);
+		marchSession.add(note8);
+		
+		aprilSession.add(note6);
+		aprilSession.add(note3);
+		aprilSession.add(note2);
+		
+		augustSession.add(note7);
+		augustSession.add(note9);
+		augustSession.add(note1);
+		augustSession.add(note6);
+		augustSession.add(note4);
+		
+		februarySession.add(note7);
+		februarySession.add(note3);
+		februarySession.add(note10);
+		
+		januarySession.add(note2);
+	
 		FichierSession.ecrireSession(maySession, "may");
 		
 		Session session1 = FichierSession.lireSession("may");
 		
 		System.out.println(session1);
+		
+		FichierSession.ecrireSession(januarySession, "january");
+		FichierSession.ecrireSession(februarySession, "february");
+		FichierSession.ecrireSession(marchSession, "march");
+		FichierSession.ecrireSession(aprilSession, "april");
+		FichierSession.ecrireSession(augustSession, "august");
 
 	}
 

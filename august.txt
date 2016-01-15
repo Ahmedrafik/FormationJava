@@ -1,0 +1,5 @@
+Tennis	10.0	Lucile
+Tennis	13.0	Sarah
+Tennis	12.0	Albert
+Tennis	8.0	Nathalie
+Tennis	18.0	Nicolas

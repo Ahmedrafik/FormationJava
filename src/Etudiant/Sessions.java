@@ -1,8 +1,13 @@
 package Etudiant;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.StringTokenizer;
 import java.util.TreeSet;
 
 public class Sessions {
@@ -49,6 +54,38 @@ public class Sessions {
 			res += "\n";
 		}
 		return res;
+	}
+	
+	public static Sessions getSessionsFromFiles() throws IOException{
+		Sessions sessions = new Sessions();
+		File currentdir = new File(".");
+		File[] paths = currentdir.listFiles();
+		for(File path : paths){
+			String filename = path.getName();
+			if(filename.endsWith(".txt")){
+				String mois = filename.substring(0, filename.length()-4);
+				FileReader read = new FileReader(filename);
+				BufferedReader reader = new BufferedReader(read);
+				while(true){
+					String line = reader.readLine();
+					if(line == null){ 
+						break;
+					}
+					StringTokenizer t =  new StringTokenizer(line, "\t");
+					Cour courstmp = new Cour(t.nextToken());
+					float noteetu = Float.valueOf(t.nextToken());
+					Etudiant etu = new Etudiant(t.nextToken());
+					
+					Note notetmp = new Note(courstmp, etu, noteetu);
+					
+					sessions.add(mois, notetmp);
+					
+				}
+				reader.close();
+			}
+		}
+		return sessions;
+		
 	}
 	
 	

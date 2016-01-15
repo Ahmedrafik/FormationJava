@@ -30,12 +30,15 @@ public class Etudiant implements Eleve{
 	
 	public Etudiant(String nom, String couleur, Vector<Double> notes, String couleuryeux){
 		this(nom, couleur, notes, (CouleurYeux)null);
+
 		for(CouleurYeux couleurtmp : CouleurYeux.values()){
 			if(couleurtmp.toString().equals(couleuryeux)){
 				this.couleuryeux = couleurtmp;
 				break;
 			}
 		}
+		
+		
 		
 	}
 	

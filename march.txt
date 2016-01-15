@@ -1,0 +1,4 @@
+Tennis	19.0	Lea
+Tennis	14.0	Gabrielle
+Tennis	10.0	Lucile
+Tennis	12.0	Judith

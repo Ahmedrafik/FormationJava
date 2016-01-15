@@ -1,0 +1,3 @@
+Tennis	10.0	Lucile
+Tennis	4.0	Suzanne
+Tennis	19.0	Lea

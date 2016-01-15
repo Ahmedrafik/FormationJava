@@ -1,0 +1,3 @@
+Tennis	8.0	Nathalie
+Tennis	4.0	Suzanne
+Tennis	6.0	Alfred
